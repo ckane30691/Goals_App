@@ -13,6 +13,7 @@ RSpec.describe User, type: :model do
   it { should validate_presence_of(:password_digest) }
   it { should validate_presence_of(:password_digest) }
   it { should validate_length_of(:password).is_at_least(6) }
+  it { should have_many :goals}
 
   it "creates a password_digest when a password is given" do
     expect(user.password_digest).to_not be_nil
