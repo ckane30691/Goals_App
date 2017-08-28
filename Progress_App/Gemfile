@@ -41,6 +41,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'annotate'
+  gem 'rails-controller-testing'
 end
 
 group :test do
